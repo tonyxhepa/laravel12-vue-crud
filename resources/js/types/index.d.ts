@@ -36,3 +36,19 @@ export interface User {
 }
 
 export type BreadcrumbItemType = BreadcrumbItem;
+
+
+export type PostForm = {
+    title: string;
+    content: string;
+    image: File | null;
+    _method?: string;
+};
+
+export type Post = {
+    id: number;
+    title: string;
+    content: string;
+    image: string;
+    slug: string;
+};
